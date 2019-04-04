@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__link" href="#">
+              <img class="main-nav__img" src="http://placehold.it/150x100" alt="Логотип Pink">
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Html Academy</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__wrap">
+        <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+      </div>
+        <form class="form-box" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-popup-label">
+            <label class="visually-hidden" for="popup-user-name">Фамилия:</label>
+            <input type="text" name="name" id="popup-user-name" placeholder="Укажите фамилию *">
+          </p>
+
+        </form>
+
+
+    </main>
+    <p class="modal-popup-label">
+          <label class="visually-hidden" for="popup-user-name">Как вас зовут?</label>
+          <input type="text" name="name" id="popup-user-name" placeholder="Как вас зовут?">
+        </p>
+        <p class="modal-popup-label">
+          <label class="visually-hidden" for="popup-email">Ваша почта для ответа?</label>
+          <input type="email" name="email" id="popup-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="modal-popup-label-rextarea">
+          <label class="visually-hidden" for="popup-user-text">Напишите что-нибудь...</label>
+          <textarea class="modal-popup-text" name="textarea" id="popup-user-text" cols="61" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <p class="popup-button-box">
+        <button class="button popup-button" type="submit">Отправить</button>
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
