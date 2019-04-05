@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__link" href="#">
+              <img class="main-nav__img" src="http://placehold.it/150x100" alt="Логотип Pink">
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Html Academy</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__wrap">
+        <p class="page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+      <section class="panorama panorama--ping">
+        <h2 class="visually-hidden">Панорама дня</h2>
+        <img class="panorama__image" src="http://placehold.it/150x100" alt="Панорама дня">
+        <div class=" panorama__user-box user-box">
+          <b class="user-box__name">Анна</b>
+          <p class="user-box__time">(5 минут назад)</p>
+          <p class="user-box__massage">
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <span class="user-box__like user-box__like--ping">Нравится: 215</span>
+        </div>
+      </section>
+      <ul class="photo-box photo-box__list">
+        <li class="photo-box__item">
+          <img class="photo-box__image" src="http://placehold.it/150x100" alt="Фотография пользователя">
+          <div class=" photo-box__user user-box">
+            <b class="user-box__name">Левон</b>
+            <p class="user-box__time">(5 минут назад)</p>
+            <p class="user-box__massage">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <span class="user-box__like user-box__like--ping">Нравится: 356</span>
+          </div>
+        </li>
+        <li class="photo-box__item">
+          <img class="photo-box__image" src="http://placehold.it/150x100" alt="Фотография пользователя">
+          <div class=" photo-box__user user-box">
+            <b class="user-box__name">Антон</b>
+            <p class="user-box__time">(12 часов назад)</p>
+            <p class="user-box__massage">
+              Соседи будут рады!
+            </p>
+            <span class="user-box__like user-box__like--ping">Нравится: 666</span>
+          </div>
+        </li>
+        <li class="photo-box__item">
+          <img class="photo-box__image" src="http://placehold.it/150x100" alt="Фотография пользователя">
+          <div class=" photo-box__user user-box">
+            <b class="user-box__name">Борис</b>
+            <p class="user-box__time">(20 часов назад)</p>
+            <p class="user-box__massage">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <span class="user-box__like user-box__like--ping">Нравится: 215</span>
+          </div>
+        </li>
+        <li class="photo-box__item">
+          <img class="photo-box__image" src="http://placehold.it/150x100" alt="Фотография пользователя">
+          <div class=" photo-box__user user-box">
+            <b class="user-box__name">Сергей</b>
+            <p class="user-box__time">(25 часов назад)</p>
+            <p class="user-box__massage">
+              Самая кубанская в мире!
+            </p>
+            <span class="user-box__like user-box__like--ping">Нравится: 4</span>
+          </div>
+        </li>
+        <li class="photo-box__item">
+          <img class="photo-box__image" src="http://placehold.it/150x100" alt="Фотография пользователя">
+          <div class=" photo-box__user user-box">
+            <b class="user-box__name">Максим</b>
+            <p class="user-box__time">(40 часов назад)</p>
+            <p class="user-box__massage">
+              Где снег-то?
+            </p>
+            <span class="user-box__like user-box__like--ping">Нравится: 150</span>
+          </div>
+        </li>
+        <li class="photo-box__item">
+          <img class="photo-box__image" src="http://placehold.it/150x100" alt="Фотография пользователя">
+          <div class=" photo-box__user user-box">
+            <b class="user-box__name">Надежда</b>
+            <p class="user-box__time">(45 часов назад)</p>
+            <p class="user-box__massage">
+              Всем GM и взаимные лайки!
+            </p>
+            <span class="user-box__like user-box__like--ping">Нравится: 2560</span>
+          </div>
+        </li>
+      </ul>
+      <section class="photo-lab">
+        <h2 class="visually-hidden">Фото лабаратория</h2>
+        <div class="photo-lab__text-wrapper">
+          <p class="photo-lab__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <form class="photo-lab__form" action="echo" method="post">
+          <div class="photo-lab__form-wrapper">
+            <img class="photo-lab__img" src="http://placehold.it/150x100" alt="Фотография:зимний лес">
+            <ul class="photo-lab__list">
+              <li class="photo-lab__item">
+                <img class="photo-lab__img" src="http://placehold.it/150x100" alt="Кадкировать">
+              </li>
+              <li class="photo-lab__item">
+                <img class="photo-lab__img" src="http://placehold.it/150x100" alt="Кадкировать">
+              </li>
+              <li class="photo-lab__item">
+                <img class="photo-lab__img" src="http://placehold.it/150x100" alt="Кадкировать">
+              </li>
+            </ul>
+            <div class="controls">
+              <div class="controls__bar"></div>
+                <div class="controls__toggle controls__toggle--crop"></div>
+            </div>
+            <div class="photo-lab__button-wrap">
+              <button class="buttom  photo-lab--button-post" type="button">Запостить</button>
+              <button class="buttom  photo-lab--button-rezet" type="button">Запостить</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrap">
+        <div class="footer-logo">
+          <a class="footer-logo__link">
+            <img class="footer-logo__img" src="http://placehold.it/150x100" alt="Логотип">
+          </a>
+        </div>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social__box footer-social-list">
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__buttom" href="#">
+                <span class="visually-hidden">Твиттер</span>
+                <img class="footer-social-list__img" src="http://placehold.it/150x100" alt="Твиттер">
+              </a>
+            </li>
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__buttom" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <img class="footer-social-list__img" src="http://placehold.it/150x100" alt="Фейсбук">
+              </a>
+            </li>
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__buttom" href="#">
+                <span class="visually-hidden">Ютюб</span>
+                <img class="footer-social-list__img" src="http://placehold.it/150x100" alt="Ютюб">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="copyright">
+          <h2 class="visuale-hidden">Разработчики.</h2>
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="#">
+            <img class="copyright__img" src="http://placehold.it/150x100" alt="Логотип">
+          </a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

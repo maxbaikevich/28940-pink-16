@@ -5,8 +5,177 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__link" href="#">
+              <img class="main-nav__img" src="http://placehold.it/150x100" alt="Логотип Pink">
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Html Academy</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="intro">
+        <h2 class="visually-hidden">Приложение для редактирования фотографий</h2>
+        <button class="button intro--button" type="button">Скачать приложение</button>
+        <ul class="intro__applications applications">
+          <li class="applications__item">
+            <a class="applications__link applications__linl--aple"></a>
+          </li>
+          <li class="applications__item">
+            <a class="applications__link applications__linl--android"></a>
+          </li>
+          <li class="applications__item">
+            <a class="applications__link applications__linl--windovs"></a>
+          </li>
+        </ul>
+        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши приемущества</h2>
+        <div class="advantages__title-wrap">
+          <p class="advantages__title">Устали от серости мегаполиса?</p>
+          <p class="advantages__title">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="advantages__wrap">
+          <ul class="advantages__list obaut-list">
+            <li class="obaut-list__item">
+              <h3 class="obaut-list__title">Поднимает настроение</h3>
+              <p class="obaut-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="obaut-list__item">
+              <h3 class="obaut-list__title">Меняет мир вокруг</h3>
+              <p class="obaut-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="obaut-list__item">
+              <h3 class="obaut-list__title">Заводит новых друзей</h3>
+              <p class="obaut-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="advantages__img-box">
+            <img class="advantages__img" src="http://placehold.it/150x100" alt="Фото приложения">
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <div class="reviews-wrapper">
+          <input class="visually-hidden" type="radio" id="reviews-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="reviews-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="reviews-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls__item slider-controls__item-1" for="reviews-1">Первый</label>
+            <label class="slider-controls__item slider-controls__item-2" for="reviews-2">Второй</label>
+            <label class="slider-controls__item slider-controls__item-3" for="reviews-3">Третий</label>
+          </div>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Вася Николаев</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Прайс лист</h2>
+        <div class="price__wrapper">
+          <input class="visually-hidden" type="radio" id="price-1" name="price">
+          <input class="visually-hidden" type="radio" id="price-2" name="price" checked>
+          <input class="visually-hidden" type="radio" id="price-3" name="price">
+          <div class="slider-controls slider-controls-price">
+            <label class="slider-controls__item slider-controls-price__item-1" for="price-1">Первый</label>
+            <label class="slider-controls__item slider-controls-price__item-2" for="price-2">Второй</label>
+            <label class="slider-controls__item slider-controls-price__item-3" for="price-3">Третий</label>
+          </div>
+          <table class="price__list slider-price">
+            <thead class="price__list-head slider-price__head">
+              <tr class="price__list-item slider-price__item">
+                <th class="price__value price__value--empty"></th>
+                <th class="price__value">База<p>1,99 USD</p></th>
+                <th class="price__value price__value--flag">Стандарт<p>3,99 USD</p></th>
+                <th class="price__value">Анлим<p>9,99 USD</p></th>
+              </tr>
+            </thead>
+            <tbody class="price__list-body slider-price__list-body">
+              <tr class="price__list-item slider-price__item">
+                <td class="price__field price__field--empty price__field--fill">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--ok">Розовый фильтр</td>
+              </tr>
+              <tr class="price__list-item slider-price__item">
+                <td class="price__field price__field--empty price__field--fill">Смайлики</td>
+                <td class="price__field price__field--cancel">Смайлики</td>
+                <td class="price__field price__field--ok">Смайлики</td>
+                <td class="price__field price__field--ok">Смайлики</td>
+              </tr>
+              <tr class="price__list-item slider-price__item">
+                <td class="price__field price__field--empty price__field--fill">Комментарии</td>
+                <td class="price__field price__field--cancel">Комментарии</td>
+                <td class="price__field price__field--cancel">Комментарии</td>
+                <td class="price__field price__field--ok">Комментарии</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Как с нами связаться</h2>
+        <div class="contacts__title-wrap">
+          <p class="contacts__title">Остались вопросы?</p>
+          <p class="contacts__title">Свяжитесь с нами!</p>
+        </div>
+        <ul class="contacts__box contacts-list">
+          <li class="contacts-list__item">
+            <b class="contacts-list__title">Звоните:</b>
+            <a class="contacts-list__tel" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts-list__item">
+            <b class="contacts-list__title">Пишите:</b>
+            <a class="contacts-list__email" href="mailto:ask@htmlbook.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts-list__item">
+            <b class="contacts-list__title">Приезжайте в гости:</b>
+            <p class="contacts-list__text">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </section>
+      <section class="map">
+        <h3 class="visually-hidden">Как до нас найти на карте</h3>
+        <div class="map__wrap">
+          <img class="map__img map__img--ping" src="http://placehold.it/150x100" alt="Карта">
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

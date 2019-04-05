@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <a class="main-nav__link" href="#">
+              <img class="main-nav__img" src="http://placehold.it/150x100" alt="Логотип Pink">
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="#">Html Academy</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__wrap">
+        <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+      </div>
+      <form class="form-box" action="https://echo.htmlacademy.ru" method="post">
+        <section class="box__user data-user">
+          <h2 class="visually-hidden">Введите свои данные</h2>
+          <p class=" data-user__item">
+            <label class="data-user__label" for="user-surname">Фамилия:</label>
+            <input class="data-user__input" type="text" name="name" id="user-surname" placeholder="Укажите фамилию *">
+          </p>
+          <p class="data-user__item">
+            <label class="data-user__label" for="user-name">Имя:</label>
+            <input class="data-user__input" type="text" name="name" id="user-name" placeholder="Введите ваше имя *">
+          </p>
+          <p class="data-user__item">
+            <label class="data-user__label" for="user-patronymic">Отчество:</label>
+            <input class="data-user__input" type="text" name="name" id="user-patronymic" placeholder="Ну и отчество тоже">
+          </p>
+        </section>
+        <fieldset class="form-sorting form-sorting--wrap-data user-sorting">
+          <legend class="legend-title user-sorting__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="user-sorting-list">
+            <li class="user-sorting-list__item">
+              <input class="user-sorting-list__checkbox" type="checkbox" name="selfie" id="filter-selfi">
+              <label class="user-sorting-list__label" for="filter-selfi">Сделал селфи с акулой</label>
+            </li>
+            <li class="user-sorting-list__item">
+              <input class="user-sorting-list__checkbox" type="checkbox" name="burned" id="filter-burned">
+              <label class="user-sorting-list__label" for="filter-burned">Обгорел на пляже</label>
+            </li>
+            <li class="user-sorting-list__item">
+              <input class="user-sorting-list__checkbox" type="checkbox" name="chuck" id="filter-chuck">
+              <label class="user-sorting-list__label" for="filter-chuck">Видел Чака Норриса</label>
+            </li>
+            <li class="user-sorting-list__item">
+              <input class="user-sorting-list__checkbox" type="checkbox" name="souvenirs" id="filter-souvenirs">
+              <label class="user-sorting-list__label" for="filter-souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="user-sorting-list__item">
+              <input class="user-sorting-list__checkbox" type="checkbox" name="tower" id="filter-tower">
+              <label class="user-sorting-list__label" for="filter-tower">Удержал башню</label>
+            </li>
+            <li class="user-sorting-list__item">
+              <input class="user-sorting-list__checkbox" type="checkbox" name="hotel" id="filter-hotel">
+              <label class="user-sorting-list__label" for="filter-hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <section class="user-addres user-contact">
+          <h2 class="visually-hidden">Как с вами связатся.</h2>
+          <p class="user-contact__item">
+            <label class="user-contact__label" for="user-tel">Номер телефона</label>
+            <input class="user-contact__input" id="user-tel" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="user-contact__item">
+            <label class="user-contact__label" for="user-email">адрес почты</label>
+            <input class="ser-contact__input" id="user-email" placeholder="Введите почту *">
+          </p>
+        </section>
+        <fieldset class="form-sorting form-sorting--wrap-application user-application">
+          <legend class="legend-title user-application__tite">С каким приложением путешествовали?</legend>
+            <ul class="user-application-list">
+              <li class="user-application-list__item">
+                <input class="user-application-list__input" type="radio" name="application" id="ios-application">
+                <label class="user-application-list__label" for="ios-application">Pink для iOS</label>
+              </li>
+              <li class="user-application-list__item">
+                <input class="user-application-list__input" type="radio" name="application" id="android-application">
+                <label class="user-application-list__label" for="android-application">Pink на Android</label>
+              </li>
+              <li class="user-application-list__item">
+                <input class="user-application-list__input" type="radio" name="application" id="windows-application">
+                <label class="user-application-list__label" for="windows-application">Windows Phone</label>
+              </li>
+            </ul>
+        </fieldset>
+        <section class="form-emotions">
+          <h2 class="visually-hidden">Опешите свои эмоции.</h2>
+          <div class="form-emotions__wrap">
+            <p class="form-rexteria">
+                <label class="form-rexteria__label" for="form-rexteria">Опишите свои эмоции</label>
+                <textarea class="form-rexteria__text" name="textarea" id="form-rexteria" cols="61" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </p>
+          </div>
+        </section>
+        <p class="form-button">
+          <button class="button button--form" type="submit">Отправить</button>
+        </p>
+        <p class="important">* — обязательные поля</p>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrap">
+        <div class="footer-logo">
+          <a class="footer-logo__link">
+            <img class="footer-logo__img" src="http://placehold.it/150x100" alt="Логотип">
+          </a>
+        </div>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social__box footer-social-list">
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__buttom" href="#">
+                <span class="visually-hidden">Твиттер</span>
+                <img class="footer-social-list__img" src="http://placehold.it/150x100" alt="Твиттер">
+              </a>
+            </li>
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__buttom" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <img class="footer-social-list__img" src="http://placehold.it/150x100" alt="Фейсбук">
+              </a>
+            </li>
+            <li class="footer-social-list__item">
+              <a class="footer-social-list__buttom" href="#">
+                <span class="visually-hidden">Ютюб</span>
+                <img class="footer-social-list__img" src="http://placehold.it/150x100" alt="Ютюб">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="copyright">
+          <h2 class="visually-hidden">Кем разработано</h2>
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="#">
+            <img class="copyright__img" src="http://placehold.it/150x100" alt="Логотип">
+          </a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
