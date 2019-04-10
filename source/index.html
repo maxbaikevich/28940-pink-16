@@ -7,50 +7,53 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="conteiner">
-          <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <a class="main-nav__link" href="#">
-                <img class="main-nav__img" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
-              </a>
-              <button class="main-nav__toggle" type="button">Открыть меню</button>
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">Фотографии</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">Конкурс</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">Html Academy</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <div class="conteiner">
+            <a class="main-nav__link" href="#">
+              <img class="main-nav__img" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+            </a>
+          </div>
         </div>
-      </div>
-    </header>
-    <main class="page-main">
-      <section class="intro">
-        <h2 class="visually-hidden">Приложение для редактирования фотографий</h2>
-        <button class="button intro--button" type="button">Скачать приложение</button>
-        <ul class="intro__applications applications">
-          <li class="applications__item">
-            <a class="applications__link applications__linl--aple"></a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
           </li>
-          <li class="applications__item">
-            <a class="applications__link applications__linl--android"></a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фотографии</a>
           </li>
-          <li class="applications__item">
-            <a class="applications__link applications__linl--windovs"></a>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Html Academy</a>
           </li>
         </ul>
-        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </nav>
+      <section class="intro">
+          <img class="intro-wrap__image" src="img/iphone-hand-mobile@1x.png" width="256" height="285" alt="рука">
+        <div class="intro-wrap">
+          <h2 class="visually-hidden">Приложение для редактирования фотографий</h2>
+          <div class="conteiner">
+            <button class="button intro--button" type="button">Скачать приложение</button>
+            <ul class="intro__applications applications">
+              <li class="applications__item">
+                <a class="applications__link applications__link--apple" href="#"><span class="visually-hidden">apple</span></a>
+              </li>
+              <li class="applications__item">
+                <a class="applications__link applications__link--android" href="#"><span class="visually-hidden">android</span></a>
+              </li>
+              <li class="applications__item">
+                <a class="applications__link applications__link--windovs" href="#"><span class="visually-hidden">windovs</span></a>
+              </li>
+            </ul>
+            <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
       </section>
+    </header>
+    <main class="page-main">
       <section class="advantages">
         <h2 class="visually-hidden">Наши приемущества</h2>
         <div class="advantages__title-wrap">
