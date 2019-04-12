@@ -31,8 +31,10 @@
           </li>
         </ul>
       </nav>
-      <section class="intro">
-          <img class="intro-wrap__image" src="img/iphone-hand-mobile@1x.png" width="256" height="285" alt="рука">
+        <section class="intro">
+          <div class="conteiner-no-padding">
+            <img class="intro-wrap__image" src="img/iphone-hand-mobile@1x.png" width="256" height="285" alt="рука">
+          </div>
         <div class="intro-wrap">
           <h2 class="visually-hidden">Приложение для редактирования фотографий</h2>
           <div class="conteiner">
@@ -55,71 +57,72 @@
     </header>
     <main class="page-main">
       <section class="advantages">
-        <h2 class="visually-hidden">Наши приемущества</h2>
-        <div class="advantages__title-wrap">
-          <p class="advantages__title">Устали от серости мегаполиса?</p>
-          <p class="advantages__title">Нам есть, что вам предложить!</p>
+        <div class="conteiner">
+          <h2 class="visually-hidden">Наши приемущества</h2>
+          <div class="advantages__title-wrap">
+            <p class="advantages__title">Устали от серости мегаполиса?</p>
+            <p class="advantages__title">Нам есть, что вам предложить!</p>
+          </div>
         </div>
         <div class="advantages__wrap">
-          <ul class="advantages__list obaut-list">
-            <li class="obaut-list__item">
-              <h3 class="obaut-list__title">Поднимает настроение</h3>
-              <p class="obaut-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="obaut-list__item">
-              <h3 class="obaut-list__title">Меняет мир вокруг</h3>
-              <p class="obaut-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="obaut-list__item">
-              <h3 class="obaut-list__title">Заводит новых друзей</h3>
-              <p class="obaut-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <div class="advantages__img-box">
-            <img class="advantages__img" src="http://placehold.it/150x100" alt="Фото приложения">
+          <div class="conteiner">
+            <ul class="advantages__list obaut-list">
+              <li class="obaut-list__item">
+                <h3 class="obaut-list__title">Поднимает настроение</h3>
+                <p class="obaut-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="obaut-list__item">
+                <h3 class="obaut-list__title">Меняет мир вокруг</h3>
+                <p class="obaut-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="obaut-list__item obaut-list__item--img">
+                <h3 class="obaut-list__title">Заводит новых друзей</h3>
+                <p class="obaut-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+        <input class="visually-hidden" type="radio" id="reviews-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="reviews-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="reviews-3" name="toggle">
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews-wrapper">
-          <input class="visually-hidden" type="radio" id="reviews-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="reviews-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="reviews-3" name="toggle">
-          <div class="slider-controls">
-            <label class="slider-controls__item slider-controls__item-1" for="reviews-1">Первый</label>
-            <label class="slider-controls__item slider-controls__item-2" for="reviews-2">Второй</label>
-            <label class="slider-controls__item slider-controls__item-3" for="reviews-3">Третий</label>
+        <div class="conteiner">
+          <h2 class="visually-hidden">Отзывы о нас</h2>
+          <div class="reviews-wrapper">
+            <div class="slider-controls">
+              <label class="slider-controls__item slider-controls__item-1" for="reviews-1">Первый</label>
+              <label class="slider-controls__item slider-controls__item-2" for="reviews-2">Второй</label>
+              <label class="slider-controls__item slider-controls__item-3" for="reviews-3">Третий</label>
+            </div>
+            <ul class="reviews__list slider-list">
+              <li class="reviews__item slider-list__item" id="slide1">
+                <h3 class="reviews__title">Николай Петров</h3>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <li class="reviews__item slider-list__item" id="slide2">
+                <h3 class="reviews__title">Вася Николаев</h3>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <li class="reviews__item slider-list__item" id="slide3">
+                <h3 class="reviews__title">Николай Петров</h3>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+            </ul>
           </div>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Вася Николаев</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-          </ul>
         </div>
       </section>
-      <section class="price">
+       <section class="price">
         <h2 class="visually-hidden">Прайс лист</h2>
         <div class="price__wrapper">
           <input class="visually-hidden" type="radio" id="price-1" name="price">
           <input class="visually-hidden" type="radio" id="price-2" name="price" checked>
           <input class="visually-hidden" type="radio" id="price-3" name="price">
           <div class="slider-controls slider-controls-price">
-            <label class="slider-controls__item slider-controls-price__item-1" for="price-1">Первый</label>
-            <label class="slider-controls__item slider-controls-price__item-2" for="price-2">Второй</label>
-            <label class="slider-controls__item slider-controls-price__item-3" for="price-3">Третий</label>
+
           </div>
           <table class="price__list slider-price">
             <thead class="price__list-head slider-price__head">
