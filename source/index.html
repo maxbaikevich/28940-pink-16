@@ -2,106 +2,137 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <div class="conteiner">
             <a class="main-nav__link" href="#">
-              <img class="main-nav__img" src="http://placehold.it/150x100" alt="Логотип Pink">
+              <img class="main-nav__img" src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
             </a>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">Фотографии</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">Конкурс</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">Html Academy</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-      </div>
+            <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+              <svg class="main-nav__toggle-menu-open" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+                <g id="miu">
+                  <g id="editor_list_view_hambuger_menu_glyph">
+                    <g>
+                      <path id="path-1"  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                    </g>
+                    <g>
+                      <path id="path-1_1_"  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <svg class="main-nav__toggle-menu-cross main-nav__toggle--closed" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+                <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="main-nav__wrapper-menu main-nav__wrapper--closed main-nav__wrapper--nojs">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--head"></ul>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <section class="intro">
+          <div class="conteiner-no-padding">
+            <img class="intro-wrap__image" src="img/iphone-hand-mobile@1x.png" width="256" height="285" alt="рука">
+          </div>
+        <div class="intro-wrap">
+          <h2 class="visually-hidden">Приложение для редактирования фотографий</h2>
+          <div class="conteiner">
+            <button class="button intro--button" type="button">Скачать приложение</button>
+            <ul class="intro__applications applications">
+              <li class="applications__item">
+                <a class="applications__link applications__link--apple" href="#"><span class="visually-hidden">apple</span></a>
+              </li>
+              <li class="applications__item">
+                <a class="applications__link applications__link--android" href="#"><span class="visually-hidden">android</span></a>
+              </li>
+              <li class="applications__item">
+                <a class="applications__link applications__link--windovs" href="#"><span class="visually-hidden">windovs</span></a>
+              </li>
+            </ul>
+            <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
     </header>
     <main class="page-main">
-      <section class="intro">
-        <h2 class="visually-hidden">Приложение для редактирования фотографий</h2>
-        <button class="button intro--button" type="button">Скачать приложение</button>
-        <ul class="intro__applications applications">
-          <li class="applications__item">
-            <a class="applications__link applications__linl--aple"></a>
-          </li>
-          <li class="applications__item">
-            <a class="applications__link applications__linl--android"></a>
-          </li>
-          <li class="applications__item">
-            <a class="applications__link applications__linl--windovs"></a>
-          </li>
-        </ul>
-        <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Наши приемущества</h2>
-        <div class="advantages__title-wrap">
-          <p class="advantages__title">Устали от серости мегаполиса?</p>
-          <p class="advantages__title">Нам есть, что вам предложить!</p>
+        <div class="conteiner">
+          <h2 class="visually-hidden">Наши приемущества</h2>
+          <div class="advantages__title-wrap">
+            <p class="advantages__title">Устали от серости мегаполиса?</p>
+            <p class="advantages__title">Нам есть, что вам предложить!</p>
+          </div>
         </div>
         <div class="advantages__wrap">
-          <ul class="advantages__list obaut-list">
-            <li class="obaut-list__item">
-              <h3 class="obaut-list__title">Поднимает настроение</h3>
-              <p class="obaut-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="obaut-list__item">
-              <h3 class="obaut-list__title">Меняет мир вокруг</h3>
-              <p class="obaut-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="obaut-list__item">
-              <h3 class="obaut-list__title">Заводит новых друзей</h3>
-              <p class="obaut-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <div class="advantages__img-box">
-            <img class="advantages__img" src="http://placehold.it/150x100" alt="Фото приложения">
+          <div class="conteiner">
+            <ul class="advantages__list obaut-list">
+              <li class="obaut-list__item">
+                <h3 class="obaut-list__title">Поднимает настроение</h3>
+                <p class="obaut-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="obaut-list__item">
+                <h3 class="obaut-list__title">Меняет мир вокруг</h3>
+                <p class="obaut-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="obaut-list__item obaut-list__item--img">
+                <h3 class="obaut-list__title">Заводит новых друзей</h3>
+                <p class="obaut-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+        <input class="visually-hidden" type="radio" id="reviews-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="reviews-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="reviews-3" name="toggle">
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews-wrapper">
-          <input class="visually-hidden" type="radio" id="reviews-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="reviews-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="reviews-3" name="toggle">
-          <div class="slider-controls">
-            <label class="slider-controls__item slider-controls__item-1" for="reviews-1">Первый</label>
-            <label class="slider-controls__item slider-controls__item-2" for="reviews-2">Второй</label>
-            <label class="slider-controls__item slider-controls__item-3" for="reviews-3">Третий</label>
+        <div class="conteiner">
+          <h2 class="visually-hidden">Отзывы о нас</h2>
+          <div class="reviews-wrapper">
+            <div class="slider-controls">
+              <label class="slider-controls__item slider-controls__item-1" for="reviews-1">Первый</label>
+              <label class="slider-controls__item slider-controls__item-2" for="reviews-2">Второй</label>
+              <label class="slider-controls__item slider-controls__item-3" for="reviews-3">Третий</label>
+            </div>
+            <ul class="reviews__list slider-list">
+              <li class="reviews__item slider-list__item slider-list__item--slider-1" id="slide1">
+                <h3 class="reviews__title">Николай Петров</h3>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <li class="reviews__item slider-list__item slider-list__item--slider-2" id="slide2">
+                <h3 class="reviews__title">Вася Николаев</h3>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+              <li class="reviews__item slider-list__item slider-list__item--slider-3" id="slide3">
+                <h3 class="reviews__title">Николай Петров</h3>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </li>
+            </ul>
           </div>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Вася Николаев</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="price">
@@ -110,26 +141,28 @@
           <input class="visually-hidden" type="radio" id="price-1" name="price">
           <input class="visually-hidden" type="radio" id="price-2" name="price" checked>
           <input class="visually-hidden" type="radio" id="price-3" name="price">
-          <div class="slider-controls slider-controls-price">
-            <label class="slider-controls__item slider-controls-price__item-1" for="price-1">Первый</label>
-            <label class="slider-controls__item slider-controls-price__item-2" for="price-2">Второй</label>
-            <label class="slider-controls__item slider-controls-price__item-3" for="price-3">Третий</label>
+          <div class="slider-controls price__control">
+            <label class="slider-controls__item slider-controls__item--mod slider-controls-price__item-1" for="price-1">Первый</label>
+            <label class="slider-controls__item slider-controls__item--mod slider-controls-price__item-2" for="price-2">Второй</label>
+            <label class="slider-controls__item slider-controls__item--mod slider-controls-price__item-3" for="price-3">Третий</label>
           </div>
+          <div class="slider-controls slider-controls-price">
+        </div>
           <table class="price__list slider-price">
             <thead class="price__list-head slider-price__head">
               <tr class="price__list-item slider-price__item">
                 <th class="price__value price__value--empty"></th>
-                <th class="price__value">База<p>1,99 USD</p></th>
-                <th class="price__value price__value--flag">Стандарт<p>3,99 USD</p></th>
-                <th class="price__value">Анлим<p>9,99 USD</p></th>
+                <th class="price__value">База<p class="price__price-tag">1,99 USD</p></th>
+                <th class="price__value price__value--flag">Стандарт<p class="price__price-tag">3,99 USD</p></th>
+                <th class="price__value">Анлим<p class="price__price-tag">9,99 USD</p></th>
               </tr>
             </thead>
             <tbody class="price__list-body slider-price__list-body">
               <tr class="price__list-item slider-price__item">
-                <td class="price__field price__field--empty price__field--fill">Розовый фильтр</td>
-                <td class="price__field price__field--ok">Розовый фильтр</td>
-                <td class="price__field price__field--ok">Розовый фильтр</td>
-                <td class="price__field price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--mod price__field--empty price__field--fill">Розовый фильтр</td>
+                <td class="price__field price__field--mod price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--mod price__field--ok">Розовый фильтр</td>
+                <td class="price__field price__field--mod price__field--ok">Розовый фильтр</td>
               </tr>
               <tr class="price__list-item slider-price__item">
                 <td class="price__field price__field--empty price__field--fill">Смайлики</td>
@@ -150,32 +183,34 @@
     </main>
     <footer class="page-footer">
       <section class="contacts">
-        <h2 class="visually-hidden">Как с нами связаться</h2>
-        <div class="contacts__title-wrap">
-          <p class="contacts__title">Остались вопросы?</p>
-          <p class="contacts__title">Свяжитесь с нами!</p>
+        <div class="conteiner">
+          <h2 class="visually-hidden">Как с нами связаться</h2>
+          <div class="contacts__title-wrap">
+            <p class="contacts__title">Остались вопросы?</p>
+            <p class="contacts__title contacts__title--mod">Свяжитесь с нами!</p>
+          </div>
+          <ul class="contacts__box contacts-list">
+            <li class="contacts-list__item">
+              <p class="contacts-list__title">Звоните:</p>
+              <a class="contacts-list__tel contacts-list__style" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts-list__item">
+              <p class="contacts-list__title contacts-list__title--mod">Пишите:</p>
+              <a class="contacts-list__email contacts-list__style" href="mailto:ask@htmlbook.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts-list__item">
+              <p class="contacts-list__title contacts-list__title--mod-2">Приезжайте в гости:</p>
+              <p class="contacts-list__text contacts-list__style">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
         </div>
-        <ul class="contacts__box contacts-list">
-          <li class="contacts-list__item">
-            <b class="contacts-list__title">Звоните:</b>
-            <a class="contacts-list__tel" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts-list__item">
-            <b class="contacts-list__title">Пишите:</b>
-            <a class="contacts-list__email" href="mailto:ask@htmlbook.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts-list__item">
-            <b class="contacts-list__title">Приезжайте в гости:</b>
-            <p class="contacts-list__text">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
-      </section>
+        </section>
       <section class="map">
         <h3 class="visually-hidden">Как до нас найти на карте</h3>
         <div class="map__wrap">
-          <img class="map__img map__img--ping" src="http://placehold.it/150x100" alt="Карта">
         </div>
       </section>
     </footer>
+    <script type="text/javascript" src="js/menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+.slider-controls__item {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  vertical-align: top;
+  background-color: #bec2c7;
+  border: 3px solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.slider-controls__item--mod {
+  border-color: #f2f2f2;
+}
+
+.slider-controls__item:first-child {
+  margin-right: 9px;
+}
+
+.slider-controls__item:nth-child(2n) {
+  margin-right: 9px;
+}
+
+.slider-controls {
+  position: absolute;
+  width: 140px;
+  top: 256px;
+  left: 50%;
+  transform: translateX(-19%);
+}
