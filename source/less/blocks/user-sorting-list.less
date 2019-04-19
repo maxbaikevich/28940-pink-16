@@ -1,0 +1,48 @@
+.user-sorting {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 32px;
+}
+
+.user-sorting-list {
+  padding: 0;
+  list-style: none;
+  margin-top: 44px;
+}
+
+.user-sorting-list__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  padding-left: 70px;
+}
+
+.user-sorting-list__label::before {
+  content:"";
+  width: 39px;
+  height: 39px;
+  left: 0;
+  top: -7px;
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.user-sorting-list__item {
+  padding-bottom: 52px;
+}
+
+.user-sorting-list__item:nth-child(6) {
+  padding-bottom: 0;
+}
+
+.user-sorting-list__checkbox:checked + .user-sorting-list__label::before {
+  content:"";
+  background-image: url("../img/icon-yes-2.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

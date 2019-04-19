@@ -1,0 +1,39 @@
+.user-application-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.user-application-list__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  padding-left: 70px;
+}
+
+.user-application-list__item {
+  padding-bottom: 45px;
+}
+
+.user-application-list__label::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #ededed;
+  border-radius: 50%;
+  left: 0;
+  top: -6px;
+  background-color: #ffffff;
+}
+
+.user-application-list__input:checked + .user-application-list__label::before {
+  content:"";
+  background-image: url("../img/icon-map-marker.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

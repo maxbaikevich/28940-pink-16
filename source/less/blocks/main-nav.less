@@ -1,13 +1,81 @@
-.main-nav__toggle {
-  display: none;
+.main-nav {
+  position: relative;
 }
 
-.main-nav__list {
-  display: none;
+.main-nav__toggle {
+position: absolute;
+border: none;
+outline: none;
+top: 0;
+right: 0;
+width: 150px;
+min-height: 66px;
+padding: 0;
+background-color: transparent;
+z-index: 20;
+}
+
+.main-nav__wrapper-menu {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.main-nav__toggle-menu-open {
+  margin-left: 40px;
+  fill: #ffffff;
+}
+
+.main-nav__toggle-menu-open:hover {
+  fill: #d22856;
+}
+
+.main-nav__toggle-menu-open:active {
+  fill: #d22856;
+  opacity: 0.3;
+}
+
+.main-nav__toggle-menu-cross {
+  margin-left: 70px;
+  fill: #ffffff;
+}
+
+.main-nav__toggle-menu-cross:hover {
+  fill: #d22856;
+}
+
+.main-nav__toggle-menu-cross:active {
+  fill: #d22856;
+  opacity: 0.3;
 }
 
 .main-nav__wrapper {
   padding-top: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 40px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__img {
+  position: absolute;
+  z-index: 20;
+}
+
+.main-nav__wrapper--closed {
+  display: none;
+}
+
+.main-nav__wrapper--opened {
+  display: block;
+}
+
+.main-nav__toggle--closed {
+  display: none;
+}
+.main-nav__wrapper--nojs{
+  display: block;
+}
+.main-nav__toggle--nojs {
+  display: none;
 }
