@@ -6,7 +6,7 @@
 .price {
   position: relative;
   background-color: #f2f2f2;
-  background-image: url(../img/bg-triangle-white.svg);
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 101% auto;
   background-position: 50% 0;
@@ -40,8 +40,8 @@
   position: absolute;
   width: 74px;
   height: 73px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 
 .price__value--flag::after {
@@ -75,9 +75,9 @@
 
 .price__field {
   padding-top: 14px;
-  padding-bottom: 14px ;
+  padding-bottom: 14px;
   padding-left: 22px;
-  padding-right: 21px ;
+  padding-right: 21px;
   border: 2px solid #e5e5e5;
   font-size: 14px;
   line-height: 30px;
@@ -90,15 +90,15 @@
   border-top: none;
 }
 
-#price-1:checked ~.price__list {
+.slider-controls-price__item-1:checked ~ .price__list {
   transform: translateX(22px);
 }
 
-#price-2:checked ~.price__list {
+.slider-controls-price__item-2:checked ~ .price__list {
   transform: translateX(-254px);
 }
 
-#price-3:checked ~.price__list {
+.slider-controls-price__item-3:checked ~ .price__list {
   transform: translateX(-532px);
 }
 
@@ -109,9 +109,9 @@
   left: 164px;
 }
 
-#price-1:checked ~ .price__control .slider-controls-price__item-1,
-#price-2:checked ~ .price__control .slider-controls-price__item-2,
-#price-3:checked ~ .price__control .slider-controls-price__item-3 {
+.slider-list__item--slider-1:checked ~ .price__control .slider-controls-price__item-1,
+.slider-list__item--slider-2:checked ~ .price__control .slider-controls-price__item-2,
+.slider-list__item--slider-3:checked ~ .price__control .slider-controls-price__item-3 {
   background-color: #ffffff;
   border: 3px solid #283645;
   border-radius: 50%;
