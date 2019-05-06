@@ -3,12 +3,13 @@
 }
 
 .main-nav__toggle {
-  position: absolute;
+  display: block;
+  position: relative;
   border: none;
   outline: none;
   top: 0;
   right: 0;
-  width: 150px;
+  width: 200px;
   min-height: 66px;
   padding: 0;
   background-color: transparent;
@@ -24,7 +25,9 @@
 }
 
 .main-nav__toggle-menu-open {
-  margin-left: 40px;
+  position: absolute;
+  left: 230px;
+  top: 20px;
   fill: #ffffff;
 }
 
@@ -38,7 +41,9 @@
 }
 
 .main-nav__toggle-menu-cross {
-  margin-left: 70px;
+  position: absolute;
+  left: 255px;
+  top: 20px;
   fill: #ffffff;
 }
 
@@ -52,13 +57,14 @@
 }
 
 .main-nav__wrapper {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  position: relative;
+
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__img {
   position: absolute;
+  top: 20px;
   z-index: 20;
 }
 
@@ -81,3 +87,18 @@
 .main-nav__toggle--nojs {
   display: none;
 }
+@media (min-width: @tablet) {
+  .main-nav__wrapper  {
+   min-height: 110px;
+  }
+
+  .main-nav__img {
+    top: 25px;
+  }
+
+  .main-nav__toggle-menu-open {
+    left: 570px;
+    top: 45px;
+  }
+}
+

@@ -18,13 +18,14 @@
 .photo-lab__list {
   box-sizing: border-box;
   align-items: center;
-  width: 199px;
+  width:280px;
   padding: 0;
   margin: 0;
-  margin-left: 33px;
+
   margin-top: 35px;
   list-style: none;
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-between;
 }
 
@@ -38,4 +39,116 @@
 
 .photo-lab__icon--active {
   fill: #d22856;
+}
+
+.photo-lab__item__mod {
+  display: flex;
+  flex-direction: column;
+}
+.photo-lab__button-wrap {
+  width: 260px;
+
+}
+.photo-lab__item-button {
+  width: 200px;
+}
+.photo-lab__crop {
+  margin-left:35px;
+}
+.photo-lab__contrast {
+  margin-right: 45px;
+}
+
+@media (min-width: @tablet) {
+  .photo-lab__form-wrapper {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+
+  .photo-lab__text {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+
+  .photo-lab__list {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .photo-lab__item {
+    width: 275px;
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid #dddfe0;
+
+  }
+
+  .photo-lab__form-container {
+    display: flex;
+  }
+
+  .photo-lab__crop {
+    width: 24px;
+    height: 24px;
+    margin-left:10px;
+    position:relative;
+    top:-23px;
+    left:-5px;
+  }
+
+  .photo-lab__fill {
+    width: 26px;
+    height: 24px;
+    margin-left:10px;
+    position:relative;
+    top:-20px;
+    left:-5px;
+  }
+
+  .photo-lab__contrast {
+    width: 16px;
+    height: 16px;
+    margin-left:10px;
+    position:relative;
+    top:-26px;
+    left:0;
+  }
+
+  .photo-lab__img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-lab__button-wrap {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-lab__item__mod {
+    display: block;
+
+  }
+
+  .photo-lab__item-wrap {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 1;
+  }
+
+  .photo-lab__icon {
+    margin-right: 0;
+  }
+  .photo-lab__item-button {
+    border-bottom:none;
+    margin-top: 30px;
+    padding-left:10px;
+  }
 }

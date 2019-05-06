@@ -57,7 +57,7 @@
     <main class="page-main">
       <div class="page-main__wrap-form">
         <div class="conteiner">
-          <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+          <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="page-main__title-mod">Пожалуйста, заполните форму ниже:</span></p>
         </div>
       </div>
       <form class="form-box" action="https://echo.htmlacademy.ru" method="post">
@@ -66,22 +66,22 @@
           <div class="conteiner">
             <p class=" data-user__item">
               <label class="data-user__label" for="user-surname">Фамилия:</label>
-              <input class="data-user__input" type="text" name="name" id="user-surname" placeholder="Укажите фамилию *">
+              <input class="data-user__input data-user__input--form" type="text" name="name" id="user-surname" placeholder="Укажите фамилию *">
             </p>
             <p class="data-user__item">
               <label class="data-user__label" for="user-name">Имя:</label>
-              <input class="data-user__input" type="text" name="name" id="user-name" placeholder="Введите ваше имя *">
+              <input class="data-user__input data-user__input--form" type="text" name="name" id="user-name" placeholder="Введите ваше имя *">
             </p>
             <p class="data-user__item">
               <label class="data-user__label" for="user-patronymic">Отчество:</label>
-              <input class="data-user__input " type="text" name="name" id="user-patronymic" placeholder="Ну и отчество тоже">
+              <input class="data-user__input data-user__input--form" type="text" name="name" id="user-patronymic" placeholder="Ну и отчество тоже">
             </p>
           </div>
         </section>
         <div class="form-sorting__wrapper">
           <fieldset class="form-sorting user-sorting">
             <legend class="legend-title user-sorting__title ">Ваши безбашенные достижения в путешествии</legend>
-            <div class="conteiner">
+            <div class="conteiner user-sorting__conteiner">
               <ul class="user-sorting-list">
                 <li class="user-sorting-list__item">
                   <input class="user-sorting-list__checkbox visually-hidden" type="checkbox" name="selfie" id="filter-selfi">
@@ -111,23 +111,26 @@
             </div>
           </fieldset>
         </div>
-        <section class="user-addres user-contact">
-          <h2 class="visually-hidden">Как с вами связатся.</h2>
-          <div class="conteiner">
-            <p class="user-contact__item">
-              <label class="data-user__label user-contact__label" for="user-tel">Номер телефона</label>
-              <input class="data-user__input user-contact__input" id="user-tel" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="user-contact__item">
-              <label class="data-user__label user-contact__label" for="user-email">адрес почты</label>
-              <input class="data-user__input ser-contact__input" id="user-email" placeholder="Введите почту *">
-            </p>
-          </div>
-        </section>
+        <fieldset class="form-contact">
+          <legend class="legend-title user-contact__title">Контактная информация</legend>
+          <section class="user-addres user-contact">
+            <h2 class="visually-hidden">Как с вами связатся.</h2>
+            <div class="conteiner user-contact__conteiner">
+              <p class="user-contact__item user-contact__item-tel">
+                <label class="data-user__label user-contact__label" for="user-tel">Номер телефона</label>
+                <input class="user-contact__input data-user__input" id="user-tel" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="user-contact__item">
+                <label class="data-user__label user-contact__label" for="user-email">адрес почты</label>
+                <input class="data-user__input user-contact__input" id="user-email" placeholder="Введите почту *">
+              </p>
+            </div>
+          </section>
+        </fieldset>
         <div class="user-application__wrapper">
           <fieldset class="form-sorting form-sorting--wrap-application">
             <legend class="legend-title user-application__tite">С каким приложением путешествовали?</legend>
-            <div class="conteiner">
+            <div class="conteiner user-application__conteiner">
               <ul class="user-application-list">
                 <li class="user-application-list__item">
                   <input class="user-application-list__input visually-hidden" type="radio" name="application" id="ios-application">
@@ -145,21 +148,24 @@
             </div>
           </fieldset>
         </div>
-        <section class="form-emotions">
-          <h2 class="visually-hidden">Опешите свои эмоции.</h2>
-          <div class="conteiner">
-            <p class="form-rexteria">
-                <label class="form-rexteria__label" for="form-rexteria">Опишите свои эмоции</label>
+        <fieldset class="form-emotions">
+          <legend class="legend-title form-emotions__title">Опишите свои эмоции</legend>
+          <section class="form-emotions__box">
+            <div class="conteiner form-emotions__conteiner">
+              <p class="form-rexteria">
                 <textarea class="form-rexteria__text" name="textarea" id="form-rexteria" cols="61" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
+              </p>
+            </div>
+          </section>
+        </fieldset>
+          <div class="conteiner form-button__conteiner">
+            <div class="form-button__box">
+              <p class="form-button">
+                <button class="button button--form" type="submit">Отправить форму</button>
+              </p>
+              <p class="important"><span class="important__star">*</span> — обязательные поля</p>
+            </div>
           </div>
-        </section>
-        <div class="conteiner">
-          <p class="form-button">
-            <button class="button button--form" type="submit">Отправить форму</button>
-          </p>
-          <p class="important"><span class="important__star">*</span> — обязательные поля</p>
-        </div>
       </form>
     </main>
     <footer class="page-footer">

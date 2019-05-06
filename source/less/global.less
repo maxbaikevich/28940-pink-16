@@ -44,13 +44,26 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   opacity: 1;
+  position: relative;
 }
 
+
+@media (min-width: @desktop) {
+  .conteiner {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+  opacity: 1;
+
+  }
+}
 .conteiner-no-padding {
   width: 320px;
+
   margin: 0 auto;
   opacity: 1;
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -59,4 +72,41 @@ body {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+}
+
+@media (min-width: @tablet) {
+  body{
+    min-width: 660px;
+  }
+  .conteiner {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 1;
+
+  }
+  .conteiner--tablet {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .conteiner-no-padding {
+  width: 660px;
+  margin: 0 auto;
+  opacity: 1;
+
+  }
+}
+
+@media (min-width: @desktop) {
+  body{
+    min-width:  1200px;
+  }
+
+  .conteiner {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 1;
+  }
 }
