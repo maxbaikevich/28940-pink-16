@@ -58,7 +58,6 @@
 
 .main-nav__wrapper {
   position: relative;
-
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -99,6 +98,22 @@
   .main-nav__toggle-menu-open {
     left: 570px;
     top: 45px;
+  }
+}
+@media (min-width: @desktop) {
+  .main-nav__toggle-menu-open {
+    display: none;
+  }
+  .main-nav__toggle-menu-cross {
+    display: none;
+  }
+
+  .main-nav__wrapper-menu {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 0;
+    top: 0;
   }
 }
 
