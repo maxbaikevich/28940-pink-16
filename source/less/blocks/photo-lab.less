@@ -21,7 +21,6 @@
   width:280px;
   padding: 0;
   margin: 0;
-
   margin-top: 35px;
   list-style: none;
   display: flex;
@@ -45,20 +44,27 @@
   display: flex;
   flex-direction: column;
 }
+
 .photo-lab__button-wrap {
   width: 260px;
-
 }
+
 .photo-lab__item-button {
   width: 200px;
 }
+
 .photo-lab__crop {
   margin-left:35px;
 }
+
 .photo-lab__contrast {
   margin-right: 45px;
 }
-
+.photo-lab__button-wrap {
+  margin-left: -3px;
+  margin-top: 38px;
+  padding-bottom: 42px;
+}
 @media (min-width: @tablet) {
   .photo-lab__form-wrapper {
     padding-top: 55px;
@@ -86,7 +92,6 @@
     display: flex;
     align-items: baseline;
     border-bottom: 1px solid #dddfe0;
-
   }
 
   .photo-lab__form-container {
@@ -151,4 +156,71 @@
     margin-top: 30px;
     padding-left:10px;
   }
+}
+@media (min-width: @desktop) {
+  .photo-lab__button-wrap {
+    width: 410px;
+    border-bottom:none;
+  }
+
+  .photo-lab__text {
+    font-size: 18px;
+    margin-bottom: 66px;
+    margin-top: 8px;
+  }
+
+  .photo-lab__item-button {
+    width: 410px;
+    margin-top: 108px;
+    padding-left: 0;
+    border-bottom: none;
+  }
+   .photo-lab__button-wrap {
+    width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+   }
+
+   .photo-lab__list {
+    margin-left: 150px;
+   }
+
+   .photo-lab__item {
+    width: 410px;
+    display: flex;
+    align-items: baseline;
+  }
+  .photo-lab__crop {
+    width: 55px;
+    height: 55px;
+    margin-left:10px;
+    position:relative;
+    top:-8px;
+    left:-18px;
+  }
+
+  .photo-lab__contrast {
+    width: 38px;
+    height: 38px;
+    margin-left:20px;
+    position:relative;
+    top:-18px;
+    left:-20px;
+  }
+  .photo-lab__fill {
+    width: 55px;
+    height: 55px;
+    margin-left:10px;
+    position:relative;
+    top:-5px;
+    left:-15px;
+  }
+  .photo-lab__form-container  {
+    width: 782px;
+    padding: 0;
+  }
+   .photo-lab__form-wrapper {
+    margin-bottom: 70px;
+   }
 }
