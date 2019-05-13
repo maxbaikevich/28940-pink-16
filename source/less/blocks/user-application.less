@@ -1,28 +1,38 @@
 .user-application__wrapper {
   background-color: #f2f2f2;
 }
+
 @media (min-width: @tablet) {
   .user-application__wrapper {
+    background-color: transparent;
     order: 2;
   }
-  .user-application__wrapper {
-    background-color: transparent;
-  }
+
   .user-application__conteiner {
-    width:616px;
+    width: 616px;
     padding: 0;
   }
+
   .user-application__tite {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
+
 @media (min-width: @desktop) {
   .user-application__conteiner {
-    width:435px;
+    width: 435px;
     padding: 0;
   }
+
   .user-application__wrapper {
     margin-top: 33px;
+  }
+
+  .user-application__tite {
+    width: 360px;
+    margin-left: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

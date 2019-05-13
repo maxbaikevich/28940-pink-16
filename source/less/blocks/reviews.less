@@ -1,5 +1,5 @@
 .reviews {
-position: relative;
+  position: relative;
   margin-bottom: 88px;
 }
 
@@ -27,9 +27,11 @@ position: relative;
   font-weight: 400;
   color: #797f86;
 }
+
 .reviews__status {
   display: none;
 }
+
 .reviews__arrow {
   display: none;
 }
@@ -50,59 +52,38 @@ position: relative;
     line-height: 30px;
     margin: 0;
     margin-top: 33px;
-
+    order: 2;
   }
+
   .reviews__status {
     font-size: 14px;
     line-height: 30px;
     color: #283645;
     margin: 0;
     margin-top: 3px;
+    display: block;
+    order: 3;
   }
 
-  .reviews__item-1{
+  .reviews__item-1 {
     display: flex;
     flex-direction: column;
   }
 
-  .reviews__title {
-  order: 2;
-  }
-  .reviews__status {
-  order: 3;
-  }
-
-  .reviews__item-2{
+  .reviews__item-2 {
     display: flex;
     flex-direction: column;
   }
 
-  .reviews__title {
-  order: 2;
-  }
-  .reviews__status {
-  order: 3;
-  }
-
-  .reviews__item-3{
+  .reviews__item-3 {
     display: flex;
     flex-direction: column;
   }
-
-  .reviews__title {
-  order: 2;
-  }
-  .reviews__status {
-  order: 3;
-  }
-  .reviews__status {
-  display: block;
-  }
-
 }
-@media (min-width: @desktop)  {
+
+@media (min-width: @desktop) {
   .reviews {
-    margin-bottom:35px;
+    margin-bottom: 35px;
   }
 
   .reviews__item-1,
@@ -125,6 +106,7 @@ position: relative;
     font-size: 18px;
     line-height: 30px;
   }
+
   .reviews__quotes-icon::before {
     content: "";
     position: absolute;
@@ -152,27 +134,26 @@ position: relative;
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
     background-position: 0% 50%;
-
   }
+
   .reviews__arrow-next {
     right: 20px;
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  .reviews__arrow:hover{
+
+  .reviews__arrow:hover {
     opacity: 0.6;
   }
 
-  .reviews__arrow:focus{
+  .reviews__arrow:focus {
     opacity: 0.6;
     outline: none;
   }
-  .reviews__arrow:active{
+
+  .reviews__arrow:active {
     opacity: 0.1;
     outline: none;
   }
-
-
 }
-

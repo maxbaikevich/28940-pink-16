@@ -6,13 +6,15 @@
 .form-sorting__wrapper {
   background-color: #f2f2f2;
 }
+
 @media (min-width: @tablet) {
   .form-sorting__wrapper {
     order: 5;
     width: 620px;
     margin: 0 auto;
-
+    background-color: transparent;
   }
+
   .form-sorting {
     box-sizing: border-box;
     width: 617px;
@@ -21,19 +23,15 @@
     padding-bottom: 15px;
     margin-bottom: 57px;
   }
-  .form-sorting__wrapper {
-    background-color: transparent;
-  }
 }
+
 @media (min-width: @desktop) {
-    .form-sorting {
-      width: 435px;
+  .form-sorting {
+    width: 435px;
+    margin-bottom: 49px;
+  }
 
-    }
-    .form-sorting__wrapper {
-      width: 940px;
-
-
-    }
-
+  .form-sorting__wrapper {
+    width: 940px;
+  }
 }
