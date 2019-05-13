@@ -1,0 +1,17 @@
+.slider-list__item {
+  display: none;
+}
+
+.reviews__reviews-1:checked ~ .reviews .slider-list__item--slider-1,
+.reviews__reviews-2:checked ~ .reviews .slider-list__item--slider-2,
+.reviews__reviews-3:checked ~ .reviews .slider-list__item--slider-3 {
+  display: block;
+}
+
+.reviews__reviews-1:checked ~ .reviews .slider-controls__item-1,
+.reviews__reviews-2:checked ~ .reviews .slider-controls__item-2,
+.reviews__reviews-3:checked ~ .reviews .slider-controls__item-3 {
+  background-color: #ffffff;
+  border: 3px solid #283645;
+  border-radius: 50%;
+}

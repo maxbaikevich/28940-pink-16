@@ -10,3 +10,24 @@
   line-height: 30px;
   color: #d22856;
 }
+
+.important__text {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .important {
+    margin-top: 0;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .important {
+    padding-top: 18px;
+  }
+
+  .important__text {
+    display: inline;
+  }
+}

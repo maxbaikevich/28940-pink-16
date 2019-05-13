@@ -44,6 +44,7 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   opacity: 1;
+  position: relative;
 }
 
 .conteiner-no-padding {
@@ -59,4 +60,60 @@ body {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+}
+
+@media (min-width: @tablet) {
+  body {
+    min-width: 660px;
+  }
+
+  .conteiner {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 1;
+  }
+
+  .conteiner--tablet {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .conteiner-no-padding {
+    width: 660px;
+    margin: 0 auto;
+    opacity: 1;
+  }
+}
+
+@media (min-width: @desktop) {
+  body {
+    min-width: 1200px;
+  }
+
+  .conteiner {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 1;
+  }
+
+  .conteiner-desktop {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+  }
+
+  .conteiner-desktop__mod {
+    width: 320px;
+    padding: 0;
+  }
+
+  .conteiner--tablet {
+    width: 890px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

@@ -13,6 +13,10 @@
   padding-right: 35px;
 }
 
+.button--intro {
+  margin-top: 28px;
+}
+
 .button--form {
   box-sizing: border-box;
   border: none;
@@ -22,4 +26,69 @@
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 23px;
+}
+
+.button--photo-lab-post,
+.button--photo-lab-rezet {
+  width: 280px;
+}
+
+.button--photo-lab-post {
+  border-color: #d22856;
+  color: #d22856;
+  margin-bottom: 13px;
+}
+
+.button--photo-lab-rezet {
+  border-color: #000000;
+  color: #000000;
+  opacity: 0.1;
+}
+
+@media (min-width: @tablet) {
+  .button--intro {
+    position: relative;
+    padding-left: 45px;
+    padding-right: 55px;
+    right: 43px;
+    top: 5px;
+  }
+
+  .button--photo-lab-post {
+    width: 260px;
+    margin-bottom: 25px;
+  }
+
+  .button--photo-lab-rezet {
+    width: 260px;
+  }
+
+  .button--form {
+    width: 300px;
+    padding-top: 22px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .button--intro {
+    position: relative;
+    font-size: 21px;
+    line-height: 18px;
+    padding-left: 30px;
+    padding-right: 38px;
+    letter-spacing: 0.5px;
+    margin-top: 49px;
+    left: -25px;
+    right: 43px;
+    top: 5px;
+  }
+
+  .button--photo-lab-post {
+    width: 183px;
+    margin-bottom: 0;
+  }
+
+  .button--photo-lab-rezet {
+    width: 183px;
+  }
 }

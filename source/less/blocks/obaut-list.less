@@ -1,4 +1,5 @@
 .obaut-list {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-top: -5px;
@@ -32,10 +33,132 @@
   margin-bottom: 31px;
 }
 
+.obaut-list__title--mod {
+  display: none;
+}
+
 .obaut-list__item--img {
   padding-bottom: 318px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 148px;
   background-size: 157px;
+}
+
+@media (min-width: @tablet) {
+  .obaut-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .obaut-list__text {
+    width: 100%;
+    text-align: left;
+  }
+
+  .obaut-list__title {
+    text-align: left;
+  }
+
+  .obaut-list__item {
+    width: 310px;
+  }
+
+  .obaut-list__item--img {
+    background-image: none;
+    padding-bottom: 45px;
+  }
+
+  .obaut-list__item:nth-child(2n) {
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .obaut-list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .obaut-list__item {
+    position: relative;
+    margin-top: 275px;
+    text-align: center;
+  }
+
+  .obaut-list__title--screen-1::before {
+    content: "";
+    position: absolute;
+    width: 292px;
+    height: 302px;
+    top: -355px;
+    left: 5px;
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 292px;
+  }
+
+  .obaut-list__title {
+    width: 230px;
+    margin-left: 35px;
+    margin-bottom: 26px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .obaut-list__text {
+    width: 245px;
+    margin-left: 28px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .obaut-list__title--mod {
+    display: block;
+  }
+
+  .obaut-list__title--screen-2 {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .obaut-list__title--screen-2::before {
+    content: "";
+    position: absolute;
+    width: 292px;
+    height: 302px;
+    top: -355px;
+    left: 8px;
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 292px;
+  }
+
+  .obaut-list__title--screen-3 {
+    position: relative;
+  }
+
+  .obaut-list__title--screen-3::before {
+    content: "";
+    position: absolute;
+    width: 292px;
+    height: 302px;
+    top: -355px;
+    left: 18px;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 292px;
+  }
+
+  .obaut-list__title--width {
+    margin-left: 45px;
+  }
+
+  .obaut-list__text__mod {
+    margin-left: 38px;
+  }
 }

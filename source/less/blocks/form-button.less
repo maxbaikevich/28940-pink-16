@@ -1,3 +1,20 @@
 .form-button {
   margin: 0;
 }
+
+@media (min-width: @tablet) {
+  .form-button__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-button__conteiner {
+    order: 5;
+  }
+}
+
+@media (min-width: @desktop) {
+  .form-button__conteiner {
+    padding: 0;
+  }
+}

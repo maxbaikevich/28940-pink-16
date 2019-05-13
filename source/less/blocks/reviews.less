@@ -27,3 +27,133 @@
   font-weight: 400;
   color: #797f86;
 }
+
+.reviews__status {
+  display: none;
+}
+
+.reviews__arrow {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .reviews {
+    margin-bottom: 65px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 35px;
+  }
+
+  .reviews__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 33px;
+    order: 2;
+  }
+
+  .reviews__status {
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    margin: 0;
+    margin-top: 3px;
+    display: block;
+    order: 3;
+  }
+
+  .reviews__item-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__item-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__item-3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop) {
+  .reviews {
+    margin-bottom: 35px;
+  }
+
+  .reviews__item-1,
+  .reviews__item-2,
+  .reviews__item-3 {
+    position: relative;
+    padding-top: 150px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .reviews__title {
+    margin: 0;
+    margin-top: 33px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__status {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__quotes-icon::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 64px;
+    top: 70px;
+    left: 435px;
+    background-image: url("../img/icon-quotes.svg");
+  }
+
+  .reviews__arrow {
+    display: block;
+    position: absolute;
+    top: 212px;
+    width: 21px;
+    height: 42px;
+    background-color: transparent;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+  }
+
+  .reviews__arrow-previous {
+    left: 20px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+  }
+
+  .reviews__arrow-next {
+    right: 20px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .reviews__arrow:hover {
+    opacity: 0.6;
+  }
+
+  .reviews__arrow:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  .reviews__arrow:active {
+    opacity: 0.1;
+    outline: none;
+  }
+}
