@@ -31,6 +31,14 @@
   background-color: #ffffff;
 }
 
+.user-application-list__label:hover::before {
+  border-color: #283645;
+}
+
+.user-application-list__label:active::before {
+  border-color: #d22856;
+}
+
 .user-application-list__input:checked + .user-application-list__label::before {
   content: "";
   background-image: url("../img/icon-map-marker.svg");

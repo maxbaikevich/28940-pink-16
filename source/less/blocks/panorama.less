@@ -8,7 +8,24 @@
 }
 
 .panorama {
+  position: relative;
   margin-bottom: 20px;
+}
+
+.panorama--ping::before {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  content: "панорама дня";
+  width: 140px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d22856;
 }
 
 @media (min-width: @tablet) {
@@ -19,6 +36,11 @@
   .panorama {
     margin-bottom: 45px;
   }
+
+  .panorama--ping::before {
+    top: 58px;
+    right: 24px;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -28,5 +50,10 @@
 
   .panorama {
     margin-bottom: 54px;
+  }
+
+  .panorama--ping::before {
+    top: 54px;
+    right: 130px;
   }
 }
