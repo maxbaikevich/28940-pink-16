@@ -27,6 +27,21 @@
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
+
+  &:hover {
+    color: #d22856;
+    transition: 0.2s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet) {
+  .site-list__item--head {
+    height: 110px;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -61,5 +76,25 @@
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
+  }
+
+  .site-list__item--head {
+    padding: 0;
+    height: 64px;
+  }
+
+  .site-list--active {
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+
+    &:hover {
+      border-color: #d22856;
+      transition: 0.2s;
+    }
+
+    &:active {
+      border-color: #ffffff;
+      opacity: 0.3;
+    }
   }
 }
