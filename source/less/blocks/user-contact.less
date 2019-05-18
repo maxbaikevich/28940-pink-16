@@ -15,6 +15,7 @@
 
 @media (min-width: @tablet) {
   .user-contact__input {
+    position: relative;
     order: 1;
   }
 
@@ -29,8 +30,39 @@
   }
 
   .user-contact__item {
+    position: relative;
     padding-left: 58px;
     margin: 0;
+  }
+
+  .user-contact__item-tel::before {
+    content: url("../img/icon-phone.svg");
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 496px;
+    width: 62px;
+    height: 62px;
+    padding-top: 19px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    z-index: 40;
+  }
+
+  .user-contact__item-email::before {
+    content: url("../img/icon-mail.svg");
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 496px;
+    width: 62px;
+    height: 62px;
+    padding-top: 19px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    z-index: 40;
   }
 
   .user-contact__label {
@@ -82,5 +114,35 @@
     padding: 0;
     margin-top: 6px;
     margin-left: 19px;
+  }
+
+  .user-contact__item-tel::before {
+    content: url("../img/icon-phone.svg");
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 370px;
+    width: 60px;
+    height: 58px;
+    padding-top: 19px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    z-index: 40;
+  }
+
+  .user-contact__item-email::before {
+    content: url("../img/icon-mail.svg");
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 382px;
+    width: 60px;
+    height: 58px;
+    padding-top: 19px;
+    padding-left: 22px;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    z-index: 40;
   }
 }
