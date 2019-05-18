@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/picturefill.js"></script>
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
@@ -161,11 +162,11 @@
             <div class="conteiner user-contact__conteiner">
               <p class="user-contact__item user-contact__item-tel">
                 <label class="data-user__label user-contact__label" for="user-tel">Номер телефона</label>
-                <input class="user-contact__input data-user__input" id="user-tel" placeholder="Номер, пожалуйста">
+                <input class="user-contact__input user-contact__input--tel data-user__input" id="user-tel" placeholder="Номер, пожалуйста">
               </p>
-              <p class="user-contact__item">
+              <p class="user-contact__item user-contact__item-email">
                 <label class="data-user__label user-contact__label" for="user-email">адрес почты</label>
-                <input class="data-user__input user-contact__input" id="user-email" placeholder="Введите почту *">
+                <input class="data-user__input user-contact__input user-contact__input--email" id="user-email" placeholder="Введите почту *">
               </p>
             </div>
           </section>
