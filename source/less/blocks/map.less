@@ -28,7 +28,22 @@
   height: 100%;
 }
 
+.map__wrap::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-map-marker.svg");
+  z-index: 40;
+  width: 37px;
+  height: 37px;
+  top: 80px;
+  left: 50%;
+}
+
 @media (min-width: @tablet) {
+  .map__wrap::after {
+    top: 120px;
+  }
+
   .map__wrap {
     position: relative;
     background-image: url("../img/bg-map-tablet@1x.jpg");
@@ -47,6 +62,10 @@
 }
 
 @media (min-width: @desktop) {
+  .map__wrap::after {
+    top: 250px;
+  }
+
   .map__wrap {
     position: relative;
     background-image: url("../img/bg-map-desktop@1x.jpg");

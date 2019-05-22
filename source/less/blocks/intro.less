@@ -28,12 +28,6 @@
   display: none;
 }
 
-.intro__hend {
-  width: 258px;
-  height: 286px;
-  margin: 0 auto;
-}
-
 .intro--hand::before {
   content: "";
   position: absolute;
@@ -62,10 +56,10 @@
   .intro--hand::before {
     content: "";
     position: absolute;
-    width: 660px;
+    width: 650px;
     height: 546px;
     top: -18px;
-    left: -48px;
+    left: -38px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-size: 700px 546px;
     background-position: center;
@@ -79,16 +73,15 @@
     }
   }
 
-  .intro__hend {
-    width: 660px;
-    height: 546px;
+  .intro--hand {
+    width: 530px;
+    height: 410px;
     margin: 0 auto;
   }
 
   .intro__wrap {
     box-sizing: border-box;
     background-color: transparent;
-    padding-left: 44px;
   }
 
   .intro__title {
@@ -122,6 +115,7 @@
 @media (min-width: @desktop) {
   .intro--hand {
     margin-left: 135px;
+    height: 503px;
   }
 
   .intro--hand::before {
