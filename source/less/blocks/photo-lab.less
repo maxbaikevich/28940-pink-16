@@ -70,7 +70,20 @@
   padding-left: 16px;
 }
 
+.photo-lab__item-element {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 @media (min-width: @tablet) {
+  .photo-lab__item-element {
+    position: relative;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
   .photo-lab__form-wrapper {
     padding-top: 55px;
     padding-bottom: 50px;
@@ -90,9 +103,10 @@
   }
 
   .photo-lab__item {
+    position: relative;
     width: 275px;
     display: flex;
-    align-items: baseline;
+
     border-bottom: 1px solid #dddfe0;
   }
 
@@ -107,29 +121,22 @@
 
   .photo-lab__crop {
     width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    position: relative;
-    top: -23px;
-    left: -5px;
+    height: 25px;
+    margin-left: 7px;
+    margin-bottom: 20px;
   }
 
   .photo-lab__fill {
     width: 26px;
-    height: 24px;
-    margin-left: 10px;
-    position: relative;
-    top: -20px;
-    left: -5px;
+    margin-left: 7px;
+
+    margin-right: 10px;
   }
 
   .photo-lab__contrast {
     width: 16px;
-    height: 16px;
+
     margin-left: 10px;
-    position: relative;
-    top: -26px;
-    left: 0;
   }
 
   .photo-lab__img {
@@ -160,7 +167,7 @@
 
   .photo-lab__item-button {
     border-bottom: none;
-    margin-top: 30px;
+    margin-top: 28px;
     padding-left: 10px;
   }
 }
@@ -189,12 +196,12 @@
 
   .photo-lab__list {
     margin-left: 95px;
+    width: 370px;
   }
 
   .photo-lab__item {
     width: 410px;
     display: flex;
-    align-items: baseline;
   }
 
   .photo-lab__crop {
@@ -204,23 +211,26 @@
     position: relative;
     top: -8px;
     left: -18px;
+    margin-bottom: 0;
   }
 
   .photo-lab__contrast {
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
     margin-left: 20px;
     position: relative;
-    top: -18px;
+    top: -5px;
     left: -20px;
+    margin-bottom: 0;
+    margin-top: 20px;
   }
 
   .photo-lab__fill {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     margin-left: 10px;
     position: relative;
-    top: -5px;
+    top: 15px;
     left: -15px;
   }
 
@@ -231,5 +241,12 @@
 
   .photo-lab__form-wrapper {
     margin-bottom: 70px;
+  }
+
+  .photo-lab__item-element {
+    border: 0;
+    padding: 0;
+    width: 55px;
+    height: 55px;
   }
 }

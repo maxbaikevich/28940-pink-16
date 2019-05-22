@@ -26,6 +26,10 @@
   left: 100px;
   margin-top: -7px;
   position: absolute;
+
+  &:hover {
+    background-color: #d23556;
+  }
 }
 
 .controls__mod {
@@ -50,11 +54,20 @@
   .controls__bar {
     width: 200px;
   }
+
+  .controls__mod--bottom {
+    margin-top: 35px;
+  }
 }
 
 @media (min-width: @desktop) {
   .controls__bar {
     width: 287px;
     margin-left: 30px;
+  }
+
+  .controls__mod--bottom {
+    margin-top: 35px;
+    padding-bottom: 35px;
   }
 }
