@@ -15,6 +15,8 @@
 
 .button--intro {
   margin-top: 28px;
+  display: block;
+  text-decoration: none;
 
   &:hover {
     color: #d22856;
@@ -89,11 +91,13 @@
 
 @media (min-width: @tablet) {
   .button--intro {
+    box-sizing: border-box;
     position: relative;
-    padding-left: 45px;
-    padding-right: 55px;
+    padding-left: 10px;
+    padding-right: 10px;
     right: 43px;
     top: 5px;
+    width: 300px;
   }
 
   .button--photo-lab-post {
@@ -116,10 +120,10 @@
     position: relative;
     font-size: 21px;
     line-height: 18px;
-    padding-left: 30px;
-    padding-right: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
     letter-spacing: 0.5px;
-    margin-top: 49px;
+    margin-top: 51px;
     left: -25px;
     right: 43px;
     top: 5px;

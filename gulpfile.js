@@ -11,6 +11,7 @@ var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var webp = require("gulp-webp");
 var del = require("del");
 
 gulp.task("clean", function() {
@@ -55,6 +56,13 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/img"));
   });
 
+  gulp.task("webp", function() {
+    return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
+    })
+
+
   gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([
@@ -67,7 +75,6 @@ gulp.task("css", function () {
     "clean",
     "copy",
     "css",
-    "images",
     "html"
   ));
 
