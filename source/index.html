@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta
-      name="viewport"
-      content="width=divice-width,initial-scale=1">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/picturefill.js"></script>
     <title>HTML Academy: Пинк</title>
@@ -71,7 +72,7 @@
                     </g>
                   </g>
                 </svg>
-                <svg class="main-nav__toggle-menu-cross main-nav__toggle--closed" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+                <svg class="main-nav__toggle-menu-cross main-nav__toggle--closed" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
                   <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
                 </svg>
               </button>
@@ -101,16 +102,16 @@
               <h2 class="visually-hidden">Приложение для редактирования фотографий</h2>
               <div class="conteiner intro--hand">
                 <h1 class="intro__title">Взгляните на жизнь иначе!</h1>
-                <button class="button button--intro" type="button">Скачать приложение</button>
+                <a class="button button--intro" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
                 <ul class="intro__applications applications">
                   <li class="applications__item">
-                    <a class="applications__link applications__link--apple" href="#"><span class="visually-hidden">apple</span></a>
+                    <a class="applications__link applications__link--apple" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">apple</span></a>
                   </li>
                   <li class="applications__item">
-                    <a class="applications__link applications__link--android" href="#"><span class="visually-hidden">android</span></a>
+                    <a class="applications__link applications__link--android" href="https://play.google.com/store"><span class="visually-hidden">android</span></a>
                   </li>
                   <li class="applications__item">
-                    <a class="applications__link applications__link--windovs" href="#"><span class="visually-hidden">windovs</span></a>
+                    <a class="applications__link applications__link--windovs" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"><span class="visually-hidden">windovs</span></a>
                   </li>
                 </ul>
                 <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -129,18 +130,18 @@
         </div>
         <div class="advantages__wrap">
           <div class="conteiner">
-            <ul class="advantages__list obaut-list">
-              <li class="obaut-list__item obaut-list__title--screen-1">
-                <h3 class="obaut-list__title">Поднимает настроение</h3>
-                <p class="obaut-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <ul class="advantages__list about-list">
+              <li class="about-list__item about-list__title--screen-1">
+                <h3 class="about-list__title">Поднимает настроение</h3>
+                <p class="about-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
-              <li class="obaut-list__item obaut-list__title--screen-2">
-                <h3 class="obaut-list__title">Меняет мир вокруг</h3>
-                <p class="obaut-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <li class="about-list__item about-list__title--screen-2">
+                <h3 class="about-list__title">Меняет мир вокруг</h3>
+                <p class="about-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
-              <li class="obaut-list__item obaut-list__item--img obaut-list__title--screen-3">
-                <h3 class="obaut-list__title obaut-list__title--width">Заводит<br class="obaut-list__title--mod"> новых друзей</h3>
-                <p class="obaut-list__text obaut-list__text__mod">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <li class="about-list__item about-list__item--img about-list__title--screen-3">
+                <h3 class="about-list__title about-list__title--width">Заводит<br class="about-list__title--mod"> новых друзей</h3>
+                <p class="about-list__text about-list__text__mod">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
           </div>
@@ -278,6 +279,9 @@
       <section class="map">
         <h3 class="visually-hidden">Как до нас найти на карте</h3>
         <div class="map__wrap">
+          <div class="map__iframe-box">
+            <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15982.052302397804!2d30.314549761840823!3d59.952773327393764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558638456444!5m2!1sru!2sru" allowfullscreen></iframe>
+          </div>
         </div>
       </section>
       <div class="conteiner">
@@ -302,7 +306,7 @@
               <li class="footer-social-list__item">
                 <a class="footer-social-list__buttom" href="#">
                   <span class="visually-hidden">Твиттер</span>
-                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                     <g id="W6EeEF_1_">
                       <g>
                         <path fill="#d22856" fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
