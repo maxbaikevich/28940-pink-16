@@ -2,6 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/picturefill.js"></script>
     <title>HTML Academy: Пинк</title>
@@ -56,7 +60,7 @@
               </a>
               <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
                 <span class="visually-hidden">Открыть меню</span>
-                <svg class="main-nav__toggle-menu-open" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+                <svg class="main-nav__toggle-menu-open" version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
                   <g id="miu">
                     <g id="editor_list_view_hambuger_menu_glyph">
                       <g>
@@ -125,11 +129,11 @@
             <div class="conteiner user-sorting__conteiner">
               <ul class="user-sorting-list">
                 <li class="user-sorting-list__item user-sorting-list__item--order-1">
-                  <input class="user-sorting-list__checkbox visually-hidden" type="checkbox" name="selfie" id="filter-selfi">
+                  <input class="user-sorting-list__checkbox visually-hidden" type="checkbox" name="selfie" id="filter-selfi" checked>
                   <label class="user-sorting-list__label" for="filter-selfi">Сделал селфи с акулой</label>
                 </li>
                 <li class="user-sorting-list__item user-sorting-list__item--order-2">
-                  <input class="user-sorting-list__checkbox visually-hidden" type="checkbox" name="burned" id="filter-burned">
+                  <input class="user-sorting-list__checkbox visually-hidden" type="checkbox" name="burned" id="filter-burned" checked>
                   <label class="user-sorting-list__label" for="filter-burned">Обгорел на пляже</label>
                 </li>
                 <li class="user-sorting-list__item user-sorting-list__item--order-3">
@@ -142,7 +146,7 @@
                 </li>
                 <li class="user-sorting-list__item
                 user-sorting-list__item--order-5">
-                  <input class="user-sorting-list__checkbox visually-hidden" type="checkbox" name="tower" id="filter-tower">
+                  <input class="user-sorting-list__checkbox visually-hidden" type="checkbox" name="tower" id="filter-tower" checked>
                   <label class="user-sorting-list__label" for="filter-tower">Удержал башню</label>
                 </li>
                 <li class="user-sorting-list__item user-sorting-list__item--order-6">
@@ -160,11 +164,11 @@
             <div class="conteiner user-contact__conteiner">
               <p class="user-contact__item user-contact__item-tel">
                 <label class="data-user__label user-contact__label" for="user-tel">Номер телефона</label>
-                <input class="user-contact__input user-contact__input--tel data-user__input" id="user-tel" placeholder="Номер, пожалуйста">
+                <input class="user-contact__input user-contact__input--tel data-user__input" type="tel" id="user-tel" placeholder="Номер, пожалуйста">
               </p>
               <p class="user-contact__item user-contact__item-email">
                 <label class="data-user__label user-contact__label" for="user-email">адрес почты</label>
-                <input class="data-user__input user-contact__input user-contact__input--email" id="user-email" placeholder="Введите почту *">
+                <input class="data-user__input user-contact__input user-contact__input--email" type="email" id="user-email" placeholder="Введите почту *">
               </p>
             </div>
           </section>
@@ -175,7 +179,7 @@
             <div class="conteiner user-application__conteiner">
               <ul class="user-application-list">
                 <li class="user-application-list__item">
-                  <input class="user-application-list__input visually-hidden" type="radio" name="application" id="ios-application">
+                  <input class="user-application-list__input visually-hidden" type="radio" name="application" id="ios-application" checked>
                   <label class="user-application-list__label" for="ios-application">Pink для iOS</label>
                 </li>
                 <li class="user-application-list__item">
